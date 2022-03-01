@@ -1,0 +1,113 @@
+body {
+  margin: 50px 15%;
+  padding: 0px 10px;
+  min-height: 50%;
+  display: flex;
+}
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.header {
+  background-color: rgb(131,20,217);
+  border: 1px solid black;
+  height: 50px;
+  width: 350px;
+  margin: 20px 170px;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  }
+.input1 {
+  height: 30px;
+  width: 230px;
+  border: 3px solid rgb(201, 218, 221);
+  border-radius: 3px;
+}
+.input2 {
+  
+  border: 3px solid rgb(201, 218, 221);
+  border-radius: 3px;
+  background-color: rgb(163, 233, 233);
+  position: relative;
+  top:0;
+}
+.input2:hover {
+  background-color: rgb(175, 219, 219);
+  color: rgb(133, 121, 121);
+}
+.input2:active {
+  background-color: rgb(235, 238, 238);
+  color: rgb(44, 41, 41);
+  top: 1px;
+
+}
+.main_zone {
+ display: flex;
+ }
+
+.main_zone > div {
+  border: 1px solid black;
+  background: rgb(187,132,235);
+  padding-top: 10px;
+  display: flex;
+  flex-basis:50%;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+}
+.block__element_1 {
+  border-radius: 5px 0 0 5px;
+}
+.block__element_2{
+  border-radius: 0 5px 5px 0;
+  }
+
+@media (max-width: 767px) {
+    .main_zone {
+      display: flex;
+      flex-direction: column; 
+      }
+
+    .container {
+        max-width: 700px;
+        margin: 0px auto;
+        padding: 10px 15px;
+
+        
+      }
+    .main_zone > div {
+      min-height: 100px;
+      max-width: 30% auto ;
+      }
+      .input1 {
+      max-height: 30px;
+      max-width: 130px;
+      border: 3px solid rgb(201, 218, 221);
+      }
+    .input2 {
+    
+      border: 3px solid rgb(201, 218, 221);
+      background-color: rgb(163, 233, 233);
+      top: 0px;
+      margin: 10px
+      }
+    .header {
+      background-color: rgb(131,20,217);
+      border: 1px solid black;
+      height: 50px;
+      max-width: 220px;
+      margin: 10px 100px;
+      padding: 10px 5%;
+      }
+    .block__element_1 {
+      border-radius: 5px 5px 0 0 ;
+      }
+    .block__element_2 {
+      border-radius:  0 0 5px 5px;
+      }
+    
+}
